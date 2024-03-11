@@ -1,4 +1,4 @@
-import { Grid } from "@mui/material";
+import { Grid, TextField } from "@mui/material";
 import React, { FC, useState } from "react";
 import { RHButton } from "../styles/RHButton";
 import DrawWinner from "./DrawWinner";
@@ -6,7 +6,7 @@ import DrawWinner from "./DrawWinner";
 type ButtonTextTypes = "Gå vidare" | "Dra en vinnare" | "Börja om";
 
 const MainContent: FC = () => {
-  const [showDrawWinner, setShowDrawWinner] = useState<boolean>(false);
+  const [showDrawWinner, setShowDrawWinner] = useState<boolean>(true);
   const [showWinner, setShowWinner] = useState<boolean>(false);
   const [buttonText, setButtonText] = useState<ButtonTextTypes>("Gå vidare");
 
