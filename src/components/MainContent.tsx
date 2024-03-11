@@ -1,17 +1,7 @@
-import { Button, Grid, styled } from "@mui/material";
+import { Grid } from "@mui/material";
 import React, { FC, useState } from "react";
+import { RHButton } from "../styles/RHButton";
 import DrawWinner from "./DrawWinner";
-
-const RHButton = styled(Button)({
-  boxShadow: "1px 1px 2px black",
-  textTransform: "none",
-  backgroundColor: "#2F424C",
-  width: "100%",
-  color: "#FFFF",
-  fontFamily: "Raleway, sans-serif",
-  fontSize: "1.5rem",
-  ":hover": { backgroundColor: "#e2cdb4", color: "#000" },
-});
 
 type ButtonTextTypes = "Gå vidare" | "Dra en vinnare" | "Börja om";
 
